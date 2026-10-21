@@ -193,6 +193,36 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
 }
 .hero .wrap { position: relative; }
+.hero__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+.hero h1 { font-size: clamp(2.3rem, 5vw, 4.1rem); }
+.grad--block { display: block; }
+.hero__art { margin: 0; }
+.hero__art svg { display: block; width: 100%; height: auto; }
+
+/* Press illustration: colors follow the theme */
+.p-shadow { fill: var(--glow-b); }
+.p-body { fill: var(--accent); }
+.p-hinge { fill: var(--accent-2); }
+.p-dot, .p-screen { fill: var(--bg); }
+.p-temp { fill: var(--accent); font: 700 12px var(--font); }
+.p-handle { fill: var(--btn); }
+.p-plate { fill: var(--lavender); }
+.p-metal { fill: var(--muted); }
+.p-pad { fill: var(--surface); stroke: var(--border); stroke-width: 2; }
+.p-cap { fill: var(--text); }
+.p-tassel { fill: none; stroke: var(--lavender); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.p-tassel-end { fill: var(--lavender); }
+.p-star { fill: var(--btn); }
+.p-heat { fill: none; stroke: var(--lavender); stroke-width: 3; stroke-linecap: round; opacity: .8; }
+.p-sheet { fill: var(--surface); stroke: var(--border); stroke-width: 2; }
+.p-label-a { fill: var(--btn); }
+.p-label-b { fill: var(--lavender); }
+.p-label-line { fill: var(--border); }
 
 .eyebrow {
   margin: 0 0 20px;
@@ -296,7 +326,7 @@ blockquote p {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
 }
-.stats strong { display: block; font-size: 2.6rem; font-weight: 800; color: var(--accent); letter-spacing: -0.03em; }
+.stats strong { display: block; margin-bottom: 4px; font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 800; color: var(--accent); letter-spacing: -0.03em; }
 .stats span { color: var(--soft); }
 
 .manifesto {
@@ -316,9 +346,12 @@ blockquote p {
   align-items: center;
 }
 .join .section__title { margin-bottom: 16px; }
-.form { display: flex; flex-direction: column; gap: 12px; }
+.form { display: flex; flex-direction: column; gap: 8px; }
+.form label { font-size: .9rem; font-weight: 600; color: var(--soft); margin-top: 6px; }
+.form .btn { margin-top: 12px; }
 .form input,
-.form select {
+.form select,
+.form textarea {
   width: 100%;
   padding: 15px 20px;
   background: var(--surface);
@@ -328,8 +361,17 @@ blockquote p {
   font: 1rem var(--font);
   appearance: none;
 }
+.form select {
+  padding-right: 44px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23878ba8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 16px;
+}
+.form textarea { border-radius: var(--radius); resize: vertical; min-height: 110px; }
 .form input:focus,
-.form select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+.form select:focus,
+.form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
 
 /* Theme switch */
 .theme-switch {
@@ -395,6 +437,12 @@ blockquote p {
 /* Thanks page */
 .thanks { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 24px; }
 
+/* Stack the hero below desktop widths */
+@media (max-width: 1024px) {
+  .hero__grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero__art { max-width: 460px; }
+}
+
 /* Tablet: 2 columns, with an odd last card spanning the full row */
 @media (max-width: 960px) {
   .cards { grid-template-columns: repeat(2, 1fr); }
@@ -431,4 +479,12 @@ blockquote p {
 @media (pointer: coarse) {
   .theme-switch button { width: 36px; height: 36px; }
   .nav__toggle { width: 44px; height: 44px; }
+}
+
+/* Smallest phones: keep the logo, theme switch and menu on one line */
+@media (max-width: 380px) {
+  .wordmark { font-size: 1.2rem; }
+  .nav__links { gap: 6px; }
+  .theme-switch button { width: 32px; height: 32px; }
+  .nav__toggle { width: 40px; height: 40px; }
 }

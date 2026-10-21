@@ -1,4 +1,6 @@
-# inkhmn — Roadmap
+# Curated Press — Roadmap
+
+Custom **party labels**, **graduation caps** and **graduation stoles**.
 
 Check items off as they ship. Every wave ends with a **quality check**. Nothing
 starts on the next wave until every QC box is ticked and you sign off.
@@ -12,8 +14,9 @@ Live site: https://curatedpress.netlify.app/
 
 ## ✅ Done so far
 
-- [x] Landing page: hero, Who's this for, How it works, stats, sign-up form, thank-you page
-- [x] Netlify Forms for sign-ups (no server needed)
+- [x] Landing page: hero, What we make, How it works, Why us, request form, thank-you page
+- [x] Heat press illustration in the hero (colors follow the theme)
+- [x] Netlify Forms for design requests (no server needed)
 - [x] Light, Dark and System themes (System is the default; choice is remembered)
 - [x] Light blue, white and lavender colors in both themes
 - [x] Responsive for phones (320px+), tablets and desktops, with a mobile menu
@@ -25,69 +28,71 @@ Live site: https://curatedpress.netlify.app/
 - [ ] With System selected, switching your phone's light or dark mode changes the site
 - [ ] On your phone, the ☰ menu opens, its links jump to the right section, and it closes
 - [ ] Page looks right on your phone, a tablet (or a narrow browser window) and a computer
-- [ ] You're happy with the light blue, white and lavender colors
+- [ ] Send one test request and confirm it shows up in Netlify under **Forms → inquiry**
+- [ ] You're happy with the wording, colors and press illustration
 
 ---
 
-## Wave 1: Show the work (content and trust)
+## Wave 1: Show your work (content and trust)
 
-- [ ] Final business name and a real logo (replace the text logo and ink-drop icon)
-- [ ] Featured artists section: photo, styles, city, short bio for each
-- [ ] Portfolio gallery of real tattoos, filterable by style (fine line, blackwork, color, traditional…)
+- [ ] Real logo (replace the "curatedpress" text logo and the ink-drop browser icon)
+- [ ] Real photo of your press or workspace (can replace or sit beside the illustration)
+- [ ] Portfolio gallery of real party labels, caps and stoles, filterable by product
 - [ ] Tap-to-enlarge photo viewer that supports swiping on phones
-- [ ] Replace placeholder stats ("1 in 10", "3", "0") with real numbers
-- [ ] FAQ: pricing, deposits, how matching works, aftercare, cover-ups, age requirement
-- [ ] 2–3 real client reviews
-- [ ] "About us" section with a founder photo and story
-- [ ] Footer: email, Instagram and TikTok links
+- [ ] "Starting at" prices for each product
+- [ ] FAQ: turnaround time, revisions, pickup and shipping, rush orders, bulk orders, materials
+- [ ] 2–3 real customer reviews
+- [ ] Short "About the designer" section with a photo
+- [ ] Footer: email, Instagram, TikTok and Facebook links
 
 **Quality check: Wave 1**
-- [ ] All wording and photos approved by you, no placeholder text left
+- [ ] All wording and photos approved by you, with no placeholder text left
 - [ ] Photos load fast on a phone (under 200 KB each, WebP or AVIF format)
 - [ ] Gallery and viewer work on phone, tablet and desktop, in Light and Dark
 - [ ] Every image has a description for screen readers
 
 ---
 
-## Wave 2: Smarter request forms (still no database)
+## Wave 2: A smarter order form (still no database)
 
-- [ ] Separate forms for collectors, artists and studios
-- [ ] Collectors: idea, placement, size, style, color or black-and-grey, budget, timeline, city
-- [ ] Reference photo upload with the request (Netlify Forms file upload)
-- [ ] Artists: portfolio and Instagram link, styles, city, availability, rates
-- [ ] Studios: location, number of chairs, guest-spot dates
-- [ ] "Find your style" quiz that suggests a style and pre-fills the request form (runs in the browser)
+- [ ] Upload inspiration photos with the request (Netlify Forms file upload)
+- [ ] Questions that change by product:
+  - [ ] Party labels: event type, theme, item type (bottle, favor, jar, bag), quantity, size
+  - [ ] Graduation caps: school, colors, text, cap is provided or needed
+  - [ ] Graduation stoles: school colors, names or text, flag or symbols, single or set, quantity
+- [ ] Needed-by date, budget range, pickup or shipping, best way to contact you
+- [ ] Rush order option with a warning when the date is very close
+- [ ] Instant price estimate (runs in the browser, no server)
 - [ ] Email to you for every new request (Netlify form notifications)
-- [ ] Automatic "we got it" reply to the person who wrote in
+- [ ] Automatic "we got it" reply to the customer
 - [ ] Better thank-you page: what happens next and when to expect a reply
 - [ ] Spam protection: honeypot (already in place) plus reCAPTCHA if spam appears
 
 **Quality check: Wave 2**
-- [ ] One test request of each type arrives with every field and photo
-- [ ] Your notification email and the automatic reply both arrive
+- [ ] One test request for each product arrives with every field and uploaded photo
+- [ ] Your notification email and the customer reply both arrive
 - [ ] Form errors are clear on a phone, and the keyboard never hides a field
-- [ ] Quiz results make sense for each style
+- [ ] Price estimates match your price sheet
 
 ---
 
 ## Wave 3: Get found, launch polish and payments without a database
 
-- [ ] Your own domain connected in Netlify, with HTTPS
+- [ ] Your own domain (for example curatedpress.com) connected in Netlify, with HTTPS
 - [ ] Link preview image and title for texts and social media (Open Graph)
 - [ ] Search basics: page titles, descriptions, `sitemap.xml`, `robots.txt`, Google Business Profile
-- [ ] One page per artist, with their gallery and a "request this artist" button
-- [ ] Separate pages per style (Fine line, Blackwork, Color, Traditional)
-- [ ] Aftercare guide page (useful content that also helps search ranking)
+- [ ] Separate pages for Party labels, Graduation caps and Graduation stoles, each with its own gallery and FAQ
+- [ ] Graduation season banner with order-by deadlines
 - [ ] Privacy policy and terms pages
 - [ ] Privacy-friendly visitor stats (Netlify Analytics or Plausible)
-- [ ] Consultation deposits with Stripe Payment Links (no database needed)
-- [ ] Optional: booking link for consultations (Calendly or Cal.com)
-- [ ] Optional: gift cards through Stripe Payment Links
+- [ ] Deposits or full payment with Stripe Payment Links (no database needed)
+- [ ] Optional: sell ready-made digital label templates as instant downloads
+- [ ] Optional: Instagram feed on the site
 - [ ] Remove the "Powered by Netlify" badge (Netlify site setting)
 
 **Quality check: Wave 3**
 - [ ] Google Lighthouse scores of 90+ for Performance, Accessibility, Best Practices and SEO on phone and desktop
-- [ ] A shared link shows the right preview on iMessage, Instagram and Facebook
+- [ ] A shared link shows the right preview on iMessage, Facebook and Instagram
 - [ ] A Stripe test payment works end to end, and the confirmation email arrives
 - [ ] Every page checked in Light, Dark and System on phone, tablet and desktop
 
@@ -96,18 +101,18 @@ Live site: https://curatedpress.netlify.app/
 ## Wave 4: Database and login
 
 - [ ] Choose the tools: login (Netlify Identity, Clerk or Supabase Auth), data (Supabase or Netlify DB), server code (Netlify Functions)
-- [ ] Client accounts: sign up, log in, reset password (email link or Google sign-in)
-- [ ] Requests saved to the database instead of only in emails
-- [ ] Client dashboard: request status (Received → Matched → Consult booked → Session done → Healed)
-- [ ] Artist accounts: edit profile, portfolio, availability and rates
-- [ ] Admin page for you (login protected): all requests, assign artists, update status, add notes
-- [ ] Automatic email when a request's status changes
-- [ ] Deposits linked to bookings (Stripe Checkout and webhooks)
-- [ ] Gallery, artists and FAQ editable from the admin page, with no code changes
-- [ ] Backups and privacy basics (who can see what, deleting someone's data on request)
+- [ ] Customer accounts: sign up, log in, reset password (email link or Google sign-in)
+- [ ] Orders saved to the database instead of only in emails
+- [ ] Customer dashboard: order status (Received → Designing → Design ready → Approved → Making → Ready for pickup/shipped)
+- [ ] Design approval online: customer views the design, leaves comments, clicks Approve
+- [ ] Admin page for you (login protected): all orders, update status, upload designs, add notes
+- [ ] Automatic email when an order's status changes
+- [ ] Payments linked to orders (Stripe Checkout and webhooks)
+- [ ] Gallery, prices and FAQ editable from the admin page, with no code changes
+- [ ] Backups and privacy basics (who can see what, deleting customer data on request)
 
 **Quality check: Wave 4**
-- [ ] Clients see only their own requests, artists see only their matches, and you see everything
-- [ ] Full test: sign up, request, get matched, book, pay a deposit, and each email arrives
+- [ ] A customer can see only their own orders; you can see all of them
+- [ ] Full test: sign up, place an order, get a design, approve it, pay, and each email arrives
 - [ ] Admin page works on phone and desktop
 - [ ] Security review of login, database rules and server code before going live

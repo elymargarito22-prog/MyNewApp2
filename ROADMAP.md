@@ -16,6 +16,7 @@ Live site: https://curatedpress.netlify.app/
 
 - [x] Landing page: hero, What we make, How it works, Why us, request form, thank-you page
 - [x] Heat press illustration in the hero (colors follow the theme)
+- [x] Quick links jump to each section without the top bar covering the heading
 - [x] Netlify Forms for design requests (no server needed)
 - [x] Light, Dark and System themes (System is the default; choice is remembered)
 - [x] Light blue, white and lavender colors in both themes
@@ -35,17 +36,21 @@ Live site: https://curatedpress.netlify.app/
 
 ## Wave 1: Show your work (content and trust)
 
-- [ ] Real logo (replace the "curatedpress" text logo and the ink-drop browser icon)
-- [ ] Real photo of your press or workspace (can replace or sit beside the illustration)
-- [ ] Portfolio gallery of real party labels, caps and stoles, filterable by product
-- [ ] Tap-to-enlarge photo viewer that supports swiping on phones
-- [ ] "Starting at" prices for each product
-- [ ] FAQ: turnaround time, revisions, pickup and shipping, rush orders, bulk orders, materials
-- [ ] 2–3 real customer reviews
-- [ ] Short "About the designer" section with a photo
-- [ ] Footer: email, Instagram, TikTok and Facebook links
+- [x] Logo: press-and-star icon plus "curatedpress" wordmark, also used as the browser tab icon
+- [x] Gallery filterable by product (Party labels, Graduation caps, Graduation stoles, Studio)
+- [x] Gallery started with free-license sample photos, including a Cricut machine (see `credits.html`)
+- [x] Tap-to-enlarge photo viewer: arrows, keyboard, swipe on phones, Escape to close
+- [x] FAQ: ordering ahead, design changes, group orders, rush orders, pickup/delivery, pricing
+- [x] Footer links and a photo credits page
+- [ ] Replace sample photos with photos of your own labels, caps and stoles
+- [ ] Real photo of your press, Cricut or workspace
+- [ ] "Starting at" prices for each product (send your prices)
+- [ ] 2–3 real customer reviews (send them with permission to post)
+- [ ] Short "About the designer" section (send a photo and a few lines about you)
+- [ ] Footer: email, Instagram, TikTok and Facebook links (send your handles)
 
 **Quality check: Wave 1**
+- [ ] FAQ answers match how you actually work (timing, pickup/delivery, rush orders)
 - [ ] All wording and photos approved by you, with no placeholder text left
 - [ ] Photos load fast on a phone (under 200 KB each, WebP or AVIF format)
 - [ ] Gallery and viewer work on phone, tablet and desktop, in Light and Dark

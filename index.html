@@ -23,10 +23,11 @@
 
   <header class="nav">
     <div class="wrap nav__inner">
-      <a href="/" class="wordmark" aria-label="Curated Press home">curated<span>press</span></a>
+      <a href="/" class="logo" aria-label="Curated Press home"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="LG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8CCDF5"/><stop offset="1" stop-color="#B9A6EE"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#LG)"/><rect x="6" y="8.5" width="20" height="4.5" rx="2.2" fill="#fff" transform="rotate(-10 16 10.75)"/><rect x="6" y="21" width="20" height="4.5" rx="2.2" fill="#fff"/><path d="M16 14.2l1.1 2.3 2.5.3-1.8 1.7.5 2.5-2.3-1.2-2.3 1.2.5-2.5-1.8-1.7 2.5-.3z" fill="#1d2140"/></svg><span class="wordmark">curated<span>press</span></span></a>
       <nav class="nav__links" aria-label="Primary">
         <a href="#designs">What we make</a>
-        <a href="#how">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
         <div class="theme-switch" role="group" aria-label="Color theme">
           <button type="button" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
@@ -47,7 +48,9 @@
     <div class="mobile-menu" id="mobile-menu" hidden>
       <div class="wrap">
         <a href="#designs">What we make</a>
+        <a href="#gallery">Gallery</a>
         <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact" class="btn">Start your design</a>
       </div>
     </div>
@@ -154,6 +157,51 @@
       </div>
     </section>
 
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <h2 class="section__title">A look at what we make</h2>
+        <div class="filters" role="group" aria-label="Filter photos">
+          <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter" data-filter="labels" aria-pressed="false">Party labels</button>
+          <button type="button" class="filter" data-filter="caps" aria-pressed="false">Graduation caps</button>
+          <button type="button" class="filter" data-filter="stoles" aria-pressed="false">Graduation stoles</button>
+          <button type="button" class="filter" data-filter="studio" aria-pressed="false">Studio</button>
+        </div>
+        <ul class="gallery">
+          <li class="gallery__item" data-category="labels">
+            <button type="button" class="gallery__open" aria-label="Enlarge photo: party table with tiny bouquets and sparklers">
+              <img src="/images/party-table.webp" width="798" height="532" loading="lazy" decoding="async"
+                   alt="A party table set with tiny wrapped bouquets of dried flowers and lit sparklers" />
+              <span class="gallery__caption">Party details</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="caps">
+            <button type="button" class="gallery__open" aria-label="Enlarge photo: rows of graduates in caps">
+              <img src="/images/graduation-caps.webp" width="798" height="532" loading="lazy" decoding="async"
+                   alt="Black-and-white photo of rows of graduates wearing mortarboard caps with tassels" />
+              <span class="gallery__caption">Graduation caps</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="stoles">
+            <button type="button" class="gallery__open" aria-label="Enlarge photo: graduate wearing a gold kente stole">
+              <img src="/images/graduation-stole.webp" width="800" height="963" loading="lazy" decoding="async"
+                   alt="A smiling graduate in a cap, navy blazer and a gold and black kente graduation stole, sitting on a garden bench" />
+              <span class="gallery__caption">Graduation stoles</span>
+            </button>
+          </li>
+          <li class="gallery__item" data-category="studio">
+            <button type="button" class="gallery__open" aria-label="Enlarge photo: Cricut cutting machine at work">
+              <img src="/images/cricut-machine.webp" width="798" height="598" loading="lazy" decoding="async"
+                   alt="Close-up of a Cricut cutting machine drawing a detailed circuit-style design on a sheet held by a green cutting mat" />
+              <span class="gallery__caption">Cricut cutting in the studio</span>
+            </button>
+          </li>
+        </ul>
+        <p class="muted gallery__note">Sample photos for inspiration, used under free licenses (<a href="/credits.html">photo credits</a>). Photos of our own projects are coming soon.</p>
+      </div>
+    </section>
+
     <!-- How it works -->
     <section class="section" id="how">
       <div class="wrap">
@@ -192,6 +240,39 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="wrap faq">
+        <h2 class="section__title">Questions, answered</h2>
+        <div class="faq__list">
+          <details>
+            <summary>How far ahead should I order?</summary>
+            <p>As early as you can, especially around graduation season. Tell us your event date in your request and we'll confirm the timing before we start.</p>
+          </details>
+          <details>
+            <summary>Can I make changes to my design?</summary>
+            <p>Yes. We share your design with you first and tweak it until it feels right. Nothing is made until you approve it.</p>
+          </details>
+          <details>
+            <summary>Do you make orders for groups or whole classes?</summary>
+            <p>Absolutely. Party labels by the dozen, matching stoles for a group, caps for friends graduating together. Include the quantity in your request and we'll put together a quote.</p>
+          </details>
+          <details>
+            <summary>Can I get my order quickly?</summary>
+            <p>Sometimes. Send your request with your date and we'll let you know honestly whether we can make it in time.</p>
+          </details>
+          <details>
+            <summary>How do I get my order?</summary>
+            <p>Let us know where you are when you reach out and we'll go over the pickup and delivery options for your order.</p>
+          </details>
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>Every piece is custom, so pricing depends on the design, materials and quantity. Send us your idea and we'll reply with a quote, with no obligation.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact -->
     <section class="section join" id="contact">
       <div class="wrap join__inner">
@@ -226,10 +307,33 @@
 
   <footer class="footer">
     <div class="wrap footer__inner">
-      <span class="wordmark wordmark--sm">curated<span>press</span></span>
-      <span class="muted">© <span id="year">2026</span> Curated Press. Made with care.</span>
+      <a href="/" class="logo logo--sm" aria-label="Curated Press home"><svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true"><defs><linearGradient id="LG2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8CCDF5"/><stop offset="1" stop-color="#B9A6EE"/></linearGradient></defs><rect width="32" height="32" rx="9" fill="url(#LG2)"/><rect x="6" y="8.5" width="20" height="4.5" rx="2.2" fill="#fff" transform="rotate(-10 16 10.75)"/><rect x="6" y="21" width="20" height="4.5" rx="2.2" fill="#fff"/><path d="M16 14.2l1.1 2.3 2.5.3-1.8 1.7.5 2.5-2.3-1.2-2.3 1.2.5-2.5-1.8-1.7 2.5-.3z" fill="#1d2140"/></svg><span class="wordmark wordmark--sm">curated<span>press</span></span></a>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#designs">What we make</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="/credits.html">Photo credits</a>
+      </nav>
+      <span class="muted footer__copy">© <span id="year">2026</span> Curated Press. Made with care.</span>
     </div>
   </footer>
+
+  <dialog class="lightbox" aria-label="Photo viewer">
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" alt="" />
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Close photo viewer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </dialog>
 
   <script src="/site.js"></script>
 </body>

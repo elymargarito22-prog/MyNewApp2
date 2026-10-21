@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>inkhmn · curated ink, made human</title>
+  <meta name="description" content="Hand-picked tattoo artists, matched to the story you want to wear. Curated ink, made human." />
+  <meta name="theme-color" content="#0D1117" />
+  <meta property="og:title" content="inkhmn · curated ink, made human" />
+  <meta property="og:description" content="Hand-picked tattoo artists, matched to the story you want to wear." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a href="/" class="wordmark" aria-label="inkhmn home">ink<span>hmn</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#artists">Artists</a>
+        <a href="#join" class="btn btn--sm">Get on the list</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow">inkhmn · the curated ink company</p>
+        <h1>
+          Your skin is permanent.<br />
+          <span class="grad">Your artist should be chosen.</span>
+        </h1>
+        <p class="lede">
+          We hand-pick tattoo artists, study their work, and match you with the one
+          who'll actually get your idea. No endless scrolling. No guessing. Just the
+          right hands for the story you want to wear.
+        </p>
+        <div class="cta-row">
+          <a href="#join" class="btn">Find my artist</a>
+          <a href="#how" class="btn btn--ghost">See how it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="section__title">Who's this for?</h2>
+        <div class="cards">
+          <article class="card">
+            <p class="card__tag">First tattoo · fiftieth tattoo · cover-ups</p>
+            <h3>For collectors</h3>
+            <p>
+              You know what you want to feel. We find the artist whose line, style
+              and temperament fit it, then make the introduction.
+            </p>
+            <a href="#join" class="link">Match me with an artist →</a>
+          </article>
+          <article class="card">
+            <p class="card__tag">Fine line · blackwork · color · traditional</p>
+            <h3>For artists</h3>
+            <p>
+              Fewer cold DMs, better-fit clients. Curated means we only send people
+              who came for <em>your</em> work, not just an open slot.
+            </p>
+            <a href="#join" class="link">Apply to be curated →</a>
+          </article>
+          <article class="card">
+            <p class="card__tag">Studios · shops · guest spots</p>
+            <h3>For studios</h3>
+            <p>
+              Fill guest spots with artists who've been vetted, and give your
+              regulars a reason to come back.
+            </p>
+            <a href="#join" class="link">Partner with us →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <h2 class="section__title">We don't match and disappear.</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Tell us the story</h3>
+            <p>The idea, the placement, the feeling. Rough sketches and Pinterest boards welcome.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Meet your match</h3>
+            <p>We hand you a short list of artists, never a feed, with a real reason for each one.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Wear it for life</h3>
+            <p>We stay in the loop through consult, session and healing, so it ends up right.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Quote band -->
+    <section class="band" id="artists">
+      <div class="wrap">
+        <blockquote>
+          <p>“Anyone can find a tattoo artist. Finding <span class="grad">your</span> artist is the whole thing.”</p>
+        </blockquote>
+        <ul class="stats">
+          <li><strong>1 in 10</strong><span>artists who apply make the cut</span></li>
+          <li><strong>3</strong><span>hand-picked matches per request, not 300</span></li>
+          <li><strong>0</strong><span>algorithms deciding what goes on your skin</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section class="section">
+      <div class="wrap">
+        <h2 class="manifesto">
+          Ink outlives trends. It belongs to people who chose it on purpose, from
+          someone who cared as much as they did.
+        </h2>
+        <p class="muted">inkhmn is pronounced “ink human.”</p>
+      </div>
+    </section>
+
+    <!-- Signup -->
+    <section class="section join" id="join">
+      <div class="wrap join__inner">
+        <div>
+          <h2 class="section__title">Ready to get inked right?</h2>
+          <p class="muted">We're opening in small batches. Drop your email and we'll reach out when it's your turn.</p>
+        </div>
+        <form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="form">
+          <input type="hidden" name="form-name" value="waitlist" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="you@email.com" required autocomplete="email" />
+          <label class="sr-only" for="role">I am a</label>
+          <select id="role" name="role">
+            <option value="collector">I want a tattoo</option>
+            <option value="artist">I'm an artist</option>
+            <option value="studio">I run a studio</option>
+          </select>
+          <button type="submit" class="btn">Get on the list</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span class="wordmark wordmark--sm">ink<span>hmn</span></span>
+      <span class="muted">© <span id="year">2026</span> inkhmn. Curated ink, made human.</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
